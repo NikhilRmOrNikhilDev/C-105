@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/62314f9215.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startWebcam()">
+    <a href="" id="link" download="Screenshot"></a>
+    <div class="container">
+        <h1>Image Recognition</h1>
+        <center>
+        <div class="row">
+            <div class="col-lg-6" id="object">
+                <p style="font-size: 15px;">Model is trained for indentify the following object</p>
+                <br>
+                <div class="object-name-box">
+                    <p id="object-name">Phone</p>
+                    <p id="object-name">Pillow</p>
+                    <p id="object-name">Mask</p>
+                    <p id="object-name">Remote</p>
+                    <p id="object-name">Book</p>
+                </div>
+            </div>
+            <div class="col-lg-6" id="cam-box">
+                <label>Webcam view</label>
+                <div id="camera"></div>
+                <label>Your Photo</label>
+                <div id="result"></div>
+            </div>
+        </div>
+    </center>
+        <div class="buttons">
+            <span><Button class="btn btn-danger" id="TAS" onclick="tas()">Take A Screenshot</Button></span>
+            <span><Button class="btn btn-success" onclick="identifyobj()">Identify Image</Button></span>
+        </div>
+        <center>
+            <div class="Result-box-text">
+                <span id="object-result">Object :</span><span id="acc-result">Accureacy:</span>
+            </div>
+        </center>
+    </div>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

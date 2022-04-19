@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #009bff;
+    text-align: center;
+}
+h1{
+    margin: 5px;
+    color: white;
+}
+.row{
+    color: black;
+    background-color: white;
+    height: 530px;
+    width: 830px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    text-align: center;
+}
+#object{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20),
+                0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    margin-right: 10px;
+}
+#cam-box{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20),
+                0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+#object-name{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.object-name-box{
+    text-align: center;
+}
+.buttons{
+   margin: 10px;
+}
+.buttons button{
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Result-box-text{
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20),
+                0 6px 20px 0 rgba(0, 0, 0, 0.40);
+}
+.Result-box-text span{
+    margin: 15px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+#camrea{
+    width:360px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    margin: 10px;
+}
+#result{
+    width:360px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    margin: 10px;
+}
